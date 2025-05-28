@@ -1,0 +1,22 @@
+---
+title: "A Whole New (Open) World"
+subtitle: "Insights from R-based Submission Pilots"
+format: 
+  revealjs:
+    link-external-newwindow: true
+    menu: true
+    code-line-numbers: false
+    footer: "[rpodcast.github.io/opensub-ness2025/](https://rpodcast.github.io/opensub-ness2025/)"
+author: 
+  - name: Eric Nantz
+    affiliation:
+      - Statistician / Developer / Podcaster
+      - Eli Lilly & Company
+      - "{{< fa brands bluesky >}} [@rpodcast.bsky.social](https://bsky.app/profile/rpodcast.bsky.social)"
+      - "{{< fa brands mastodon >}} [@rpodcast@podcastindex.social](https://podcastindex.social/@rpodcast)"
+      - "{{< fa brands linkedin >}} [@eric-nantz](https://www.linkedin.com/in/eric-nantz-6621617/)"
+date: June 3, 2025
+---
+
+
+## More to Come
