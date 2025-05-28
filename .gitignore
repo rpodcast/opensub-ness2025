@@ -1,0 +1,8 @@
+# nix build files
+result
+
+/.quarto/
+_site
+
+# other
+scratch/
