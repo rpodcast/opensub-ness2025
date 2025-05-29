@@ -163,6 +163,123 @@ Eric Nantz
 </section>
 <section id="even-more-to-come" class="slide level2">
 <h2>Even more to come</h2>
+</section>
+<section id="section" class="slide level2" data-background-image="assets/img/rpharma_audience.jpg" data-background-size="contain">
+<h2></h2>
+<div class="absolute" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;top: -5%; left: 1%; ">
+<p>R/Pharma 2018</p>
+</div>
+<aside class="notes">
+<p>I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="r-submissions-working-group" class="slide level2">
+<h2>R Submissions Working Group</h2>
+<p><img data-src="assets/img/pilot1_kmplot.png" class="absolute" style="top: 70px; left: -50px; width: 40%; "></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Industry <strong>and Regulatory</strong> members</li>
+<li class="fragment">Create submission deliverables with <strong>open-source</strong> software</li>
+<li class="fragment">Emulate realistic submission review</li>
+<li class="fragment">Innovation encouraged!</li>
+</ul>
+</div></div>
+<div class="footer">
+<p><a href="https://rconsortium.github.io/submissions-wg/">rconsortium.github.io/submissions-wg</a></p>
+</div>
+</section>
+<section id="install-execute-application" class="slide level2">
+<h2>Install &amp; Execute Application</h2>
+<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 170px; left: -40px; width: 35%; "></p>
+<div class="columns">
+<div class="column" style="width:45%;">
+
+</div><div class="column" style="width:55%;">
+<ul>
+<li class="fragment">Extract submission bundle</li>
+<li class="fragment">Install R</li>
+<li class="fragment">(Optionally install RStudio)</li>
+<li class="fragment">Install Rtools for package compilation</li>
+<li class="fragment">Install <code>{renv}</code> R package</li>
+<li class="fragment">Install application package library</li>
+<li class="fragment">Run application in R process</li>
+</ul>
+</div></div>
+</section>
+<section id="install-execute-application-1" class="slide level2">
+<h2>Install &amp; Execute Application</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="assets/img/spider_web.svg" class="absolute" style="top: 100px; left: -40px; width: 50%; "></p>
+<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 200px; left: 95px; width: 25%; "></p>
+</div><div class="column" style="width:55%;">
+<ul>
+<li class="fragment">Extract submission bundle</li>
+<li class="fragment">Launch App in web process</li>
+<li class="fragment">View App in web browser</li>
+</ul>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<h3 id="traditional-shiny">Traditional Shiny</h3>
+<p><img data-src="assets/img/car_open_hood.jpg"></p>
+<p><img data-src="assets/img/Rlogo.svg" class="absolute" style="top: 150px; left: 95px; width: 13%; "></p>
+<p><img data-src="assets/img/shiny.png" class="absolute" style="top: 150px; left: 255px; width: 10%; "></p>
+</div><div class="column fragment" style="width:50%;">
+<h3 id="web-assembly">Web-Assembly</h3>
+<p><img data-src="assets/img/car_open_hood.jpg"></p>
+<p><img data-src="assets/img/homepage.svg" class="absolute" style="top: 150px; left: 725px; width: 12%; "></p>
+</div></div>
+</section>
+<section id="engine-swap" class="slide level2">
+<h2>Engine Swap</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="assets/img/pit_stop.jpg"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment"><p>Verify packages compatibility with WebR</p>
+<ul>
+<li class="fragment"><del><code>{golem}</code></del> <code>{rhino}</code></li>
+</ul></li>
+<li class="fragment"><p>Augment <code>shinylive::export</code> to inject SAS data sets</p></li>
+<li class="fragment"><p><a href="https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R">User-friendly wrappers</a></p></li>
+<li class="fragment"><p>Test with custom Windows virtual machines</p></li>
+</ul>
+</div></div>
+<div class="footer">
+<p><a href="https://github.com/RConsortium/submissions-pilot4-webR">github.com/RConsortium/submissions-pilot4-webR</a></p>
+</div>
+</section>
+<section id="with-great-power" class="slide level2">
+<h2>With Great Power…</h2>
+<p><img data-src="assets/img/app_filter.png" class="absolute" style="top: 60px; left: 10px; width: 25%; "></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<ul>
+<li class="fragment">Dynamically updates p-values based on filtered observation</li>
+<li class="fragment">Potential for confusion and misinterpretation</li>
+<li class="fragment">Compromise: Allow filtering within visualization module only</li>
+</ul>
+</div></div>
 
 
 </section>

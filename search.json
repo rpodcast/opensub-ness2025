@@ -12,5 +12,47 @@
     "title": "A Whole New (Open) World",
     "section": "Even more to come",
     "text": "Even more to come"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "A Whole New (Open) World",
+    "section": "",
+    "text": "R/Pharma 2018\n\n\nI saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference."
+  },
+  {
+    "objectID": "index.html#r-submissions-working-group",
+    "href": "index.html#r-submissions-working-group",
+    "title": "A Whole New (Open) World",
+    "section": "R Submissions Working Group",
+    "text": "R Submissions Working Group\n\n\n\n\n\n\nIndustry and Regulatory members\nCreate submission deliverables with open-source software\nEmulate realistic submission review\nInnovation encouraged!\n\n\n\nrconsortium.github.io/submissions-wg"
+  },
+  {
+    "objectID": "index.html#install-execute-application",
+    "href": "index.html#install-execute-application",
+    "title": "A Whole New (Open) World",
+    "section": "Install & Execute Application",
+    "text": "Install & Execute Application\n\n\n\n\n\n\nExtract submission bundle\nInstall R\n(Optionally install RStudio)\nInstall Rtools for package compilation\nInstall {renv} R package\nInstall application package library\nRun application in R process"
+  },
+  {
+    "objectID": "index.html#install-execute-application-1",
+    "href": "index.html#install-execute-application-1",
+    "title": "A Whole New (Open) World",
+    "section": "Install & Execute Application",
+    "text": "Install & Execute Application\n\n\n\n\n\n\nExtract submission bundle\nLaunch App in web process\nView App in web browser"
+  },
+  {
+    "objectID": "index.html#engine-swap",
+    "href": "index.html#engine-swap",
+    "title": "A Whole New (Open) World",
+    "section": "Engine Swap",
+    "text": "Engine Swap\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nTest with custom Windows virtual machines\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
+  },
+  {
+    "objectID": "index.html#with-great-power",
+    "href": "index.html#with-great-power",
+    "title": "A Whole New (Open) World",
+    "section": "With Great Power…",
+    "text": "With Great Power…\n\n\n\n\n\n\nDynamically updates p-values based on filtered observation\nPotential for confusion and misinterpretation\nCompromise: Allow filtering within visualization module only"
   }
 ]
