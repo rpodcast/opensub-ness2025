@@ -6,4 +6,8 @@ Within the life sciences industry, the R language has enabled tremendous innovat
 
 ## Assorted References
 
-TBD: Add links
+* R/Pharma 2023 [slides](https://docs.google.com/presentation/d/1hQUqXAGcAlhwBXsDJ1D516N-fcN865qx/edit?slide=id.p1#slide=id.p1)
+* Pilot 2 repo: https://github.com/RConsortium/submissions-pilot2
+* Pilot 4 container repo https://github.com/RConsortium/submissions-pilot4-container
+* Pilot 4 webassembly repo https://github.com/RConsortium/submissions-pilot4-webR
+
