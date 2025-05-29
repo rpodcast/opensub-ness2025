@@ -22,3 +22,180 @@ date: June 3, 2025
 ## More to Come
 
 ## Even more to come
+
+## {background-image="assets/img/rpharma_audience.jpg" background-size="contain"}
+
+::: {.absolute left="1%" top="-5%" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
+R/Pharma 2018
+:::
+
+::: {.notes}
+I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference. 
+:::
+
+## R Submissions Working Group
+
+![](assets/img/pilot1_kmplot.png){.absolute top=70 left=-50 width="40%"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+:::
+
+::: {.column width="50%"}
+
+:::: {.incremental}
+
+* Industry **and Regulatory** members
+* Create submission deliverables with **open-source** software
+* Emulate realistic submission review
+* Innovation encouraged!
+
+::::
+
+:::
+
+::::
+
+::: footer
+[rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
+:::
+
+## Install & Execute Application
+
+![](assets/img/pilot2_packages.png){.absolute top=170 left=-40 width="35%"}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+:::
+
+::: {.column width="55%"}
+
+:::: {.incremental}
+
+- Extract submission bundle
+- Install R
+- (Optionally install RStudio)
+- Install Rtools for package compilation
+- Install `{renv}` R package
+- Install application package library
+- Run application in R process
+
+::::
+
+:::
+
+::::
+
+## Install & Execute Application 
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![](assets/img/spider_web.svg){.absolute top=100 left=-40 width="50%"}
+
+![](assets/img/pilot2_packages.png){.absolute top=200 left=95 width="25%"}
+
+:::
+
+::: {.column width="55%"}
+
+:::: {.incremental}
+
+- Extract submission bundle
+- Launch App in web process
+- View App in web browser
+
+::::
+
+:::
+
+::::
+
+---
+
+:::: {.columns}
+
+::: {.column width=50% .fragment}
+
+### Traditional Shiny
+
+![](assets/img/car_open_hood.jpg)
+
+![](assets/img/Rlogo.svg){.absolute top=150 left=95 width="13%"}
+
+![](assets/img/shiny.png){.absolute top=150 left=255 width="10%"}
+:::
+
+::: {.column width=50% .fragment}
+
+### Web-Assembly
+
+![](assets/img/car_open_hood.jpg)
+
+![](assets/img/homepage.svg){.absolute top=150 left=725 width="12%"}
+
+:::
+
+::::
+
+## Engine Swap
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+![](assets/img/pit_stop.jpg)
+
+:::
+
+::: {.column width=50%}
+
+:::: {.incremental}
+
+- Verify packages compatibility with WebR
+
+     - ~~`{golem}`~~ `{rhino}`
+
+- Augment `shinylive::export` to inject SAS data sets
+
+- [User-friendly wrappers](https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R)
+
+- Test with custom Windows virtual machines
+::::
+
+:::
+
+::::
+
+::: footer
+[github.com/RConsortium/submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
+:::
+
+## With Great Power... 
+
+![](assets/img/app_filter.png){.absolute top=60 left=10 width="25%"}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+:::
+
+::: {.column width="70%"}
+
+:::: {.incremental}
+
++ Dynamically updates p-values based on filtered observation
++ Potential for confusion and misinterpretation 
++ Compromise: Allow filtering within visualization module only
+
+::::
+
+:::
+
+::::
