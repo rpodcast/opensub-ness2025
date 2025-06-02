@@ -1,29 +1,45 @@
 ---
-title: "A Whole New (Open) World"
-subtitle: "Insights from R-based Submission Pilots"
-title-slide-attributes: 
-  data-background-image: assets/img/universe_unsplash.jpg
-  data-background-size: contain
-  data-background-opacity: "0.4"
-  data-background-color: black
 format: 
   revealjs:
     link-external-newwindow: true
     menu: true
     code-line-numbers: false
     footer: "[rpodcast.github.io/opensub-ness2025](https://rpodcast.github.io/opensub-ness2025/)"
-author: 
-  - name: Eric Nantz
-    affiliation:
-      - Statistician / Developer / Podcaster
-      - Eli Lilly & Company
-      - "{{< fa brands bluesky >}} [@rpodcast.bsky.social](https://bsky.app/profile/rpodcast.bsky.social)"
-      - "{{< fa brands mastodon >}} [@rpodcast@podcastindex.social](https://podcastindex.social/@rpodcast)"
-      - "{{< fa brands linkedin >}} [@eric-nantz](https://www.linkedin.com/in/eric-nantz-6621617/)"
-date: June 3, 2025
 revealjs-plugins:
   - codewindow
 ---
+
+## {background-image="assets/img/universe_unsplash.jpg" background-size="contain" background-opacity="0.4" background-color="black"}
+
+<h2>A Whole New (Open) World</h2>
+<h3>Insights from R-based Submission Pilots</h3>
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Eric Nantz
+
+Statistician / Developer / Podcaster
+
+Eli Lilly & Company
+
+{{< fa brands bluesky >}} [@rpodcast.bsky.social](https://bsky.app/profile/rpodcast.bsky.social)
+
+{{< fa brands mastodon >}} [@rpodcast@podcastindex.social](https://podcastindex.social/@rpodcast)
+
+{{< fa brands linkedin >}} [@eric-nantz](https://www.linkedin.com/in/eric-nantz-6621617/)
+:::
+
+::: {.column width="40%"}
+
+{{< qrcode https://rpodcast.github.io/opensub-ness2025/ qr1 width=300 height=300 >}}
+
+:::
+
+::::
 
 ## {background-image="assets/img/rpharma_audience.jpg" background-size="contain"}
 
