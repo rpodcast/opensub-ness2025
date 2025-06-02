@@ -7,6 +7,9 @@
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
@@ -31,11 +34,78 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-codewindow/codewindow.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -129,7 +199,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-color="black" data-background-image="assets/img/universe_unsplash.jpg" data-background-opacity="0.4" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">A Whole New (Open) World</h1>
   <p class="subtitle">Insights from R-based Submission Pilots</p>
 
@@ -158,16 +228,13 @@ Eric Nantz
 
   <p class="date">2025-06-03</p>
 </section>
-<section id="more-to-come" class="slide level2">
-<h2>More to Come</h2>
-</section>
-<section id="even-more-to-come" class="slide level2">
-<h2>Even more to come</h2>
-</section>
 <section id="section" class="slide level2" data-background-image="assets/img/rpharma_audience.jpg" data-background-size="contain">
 <h2></h2>
 <div class="absolute" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;top: -5%; left: 1%; ">
 <p>R/Pharma 2018</p>
+</div>
+<div class="footer">
+<p><a href="https://rinpharma.com">rinpharma.com</a></p>
 </div>
 <aside class="notes">
 <p>I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference.</p>
@@ -183,6 +250,31 @@ Eric Nantz
           display:block!important;
       }</style></aside>
 </section>
+
+
+
+<section id="r-consortium" class="slide level2 smaller">
+<h2>R Consortium</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The R Consortium is a non-profit organization with the mission to support the:</p>
+<ul>
+<li>R Language</li>
+<li>R Foundation</li>
+<li>R Community</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>The R Consortium Provides:</p>
+<ul>
+<li>Grants to extend the technical and social infrastructure of the R Ecosystem</li>
+<li>Oversight and governance for working groups that enable industry and government collaboration</li>
+<li>An open forum for the R Community</li>
+</ul>
+</div></div>
+<div class="footer">
+<p><a href="https://r-consortium.org/">r-consortium.org</a></p>
+</div>
+</section>
 <section id="r-submissions-working-group" class="slide level2">
 <h2>R Submissions Working Group</h2>
 <p><img data-src="assets/img/pilot1_kmplot.png" class="absolute" style="top: 70px; left: -50px; width: 40%; "></p>
@@ -191,14 +283,99 @@ Eric Nantz
 
 </div><div class="column" style="width:50%;">
 <ul>
-<li class="fragment">Industry <strong>and Regulatory</strong> members</li>
-<li class="fragment">Create submission deliverables with <strong>open-source</strong> software</li>
-<li class="fragment">Emulate realistic submission review</li>
-<li class="fragment">Innovation encouraged!</li>
+<li>Industry <strong>and Regulatory</strong> members</li>
+<li>Create submission deliverables with <strong>open-source</strong> software</li>
+<li>Emulate realistic submission review</li>
+<li>Innovation encouraged!</li>
 </ul>
 </div></div>
 <div class="footer">
 <p><a href="https://rconsortium.github.io/submissions-wg/">rconsortium.github.io/submissions-wg</a></p>
+</div>
+</section>
+<section id="foundation---pilot-1-submission" class="slide level2 smaller">
+<h2>Foundation - Pilot 1 Submission</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="assets/img/tron1.png"></p>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>November 2021 - <a href="https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">Successful R-based Test Package Submitted to FDA</a></li>
+<li>Adhered to <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd">Electronic Common Technical Document (eCTD)</a> specifications
+<ul>
+<li><a href="https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/datasets/adrg.pdf">Analysis Data Reviewer Guide</a></li>
+<li>R Package converted to <a href="https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/programs/r0pkg.txt">text file</a> using <a href="https://merck.github.io/pkglite/"><code>{pkglite}</code></a></li>
+<li>ADaM datasets</li>
+<li>TLF output</li>
+</ul></li>
+</ul>
+</div></div>
+<div class="footer">
+<p><a href="https://github.com/RConsortium/submissions-pilot1-to-fda">github.com/RConsortium/submissions-pilot1-to-fda</a></p>
+</div>
+</section>
+
+<section id="section-5" class="slide level2" data-background-image="assets/img/wesley-tingey-snNHKZ-mGfE-unsplash.jpg" data-background-size="contain">
+<h2></h2>
+<div class="absolute" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;top: -5%; left: -5%; ">
+<p>Many Results</p>
+</div>
+<aside class="notes">
+<p>In the not-so-distant past, the results of a clinical trial were sent to reviewers as paper outputs that could fill a small moving truck</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-6" class="slide level2" data-background-image="assets/img/usb_computer_files.png" data-background-size="contain">
+<h2></h2>
+<aside class="notes">
+<p>Time to comb through many static outputs. How many outputs are there total? Over 1,000 tables, listings, and graphs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/video/pilot2_app_demo_for_dia_compressed.mp4"></video>
+<div class="footer">
+<p><a href="https://github.com/RConsortium/submissions-pilot2">github.com/RConsortium/submissions-pilot2</a></p>
+</div>
+</section>
+<section id="with-great-power" class="slide level2">
+<h2>With Great Power…</h2>
+<p><img data-src="assets/img/app_filter.png" class="absolute" style="top: 60px; left: 10px; width: 25%; "></p>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<ul>
+<li>Dynamically updates p-values based on filtered observation</li>
+<li>Potential for confusion and misinterpretation</li>
+<li>Compromise: Allow filtering within visualization module only</li>
+</ul>
+</div></div>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<p><img data-src="assets/img/pilot2_success_post_approval.png" class="absolute" style="top: 10px; left: 70px; "></p>
+<div class="footer">
+<p><a href="https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2" data-preview-link="true">R-Consortium Blog Post</a></p>
 </div>
 </section>
 <section id="install-execute-application" class="slide level2">
@@ -222,30 +399,75 @@ Eric Nantz
 <section id="install-execute-application-1" class="slide level2">
 <h2>Install &amp; Execute Application</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
-<p><img data-src="assets/img/spider_web.svg" class="absolute" style="top: 100px; left: -40px; width: 50%; "></p>
-<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 200px; left: 95px; width: 25%; "></p>
-</div><div class="column" style="width:55%;">
+<div class="column" style="width:55%;">
+<p><img data-src="assets/img/spider_web.svg" class="absolute" style="top: 100px; left: -40px; width: 25%; "></p>
+<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 150px; left: 27px; width: 12%; "></p>
+<p><img data-src="assets/img/docker-whale-only.png" class="absolute" style="top: 230px; left: 270px; width: 20%; "></p>
+<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 150px; left: 267px; width: 12%; "></p>
+</div><div class="column" style="width:45%;">
 <ul>
-<li class="fragment">Extract submission bundle</li>
-<li class="fragment">Launch App in web process</li>
-<li class="fragment">View App in web browser</li>
+<li>Extract submission bundle</li>
+<li>Launch App in web process</li>
+<li>View App in web browser</li>
 </ul>
 </div></div>
+<aside class="notes">
+<p><img data-src="assets/img/spider_web.svg" class="absolute" style="top: 100px; left: -40px; width: 50%; "></p>
+<p><img data-src="assets/img/pilot2_packages.png" class="absolute" style="top: 200px; left: 95px; width: 25%; "></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section class="slide level2">
 
 <div class="columns">
-<div class="column fragment" style="width:50%;">
-<h3 id="traditional-shiny">Traditional Shiny</h3>
+<div class="column fragment" style="width:33%;">
+<center>
+<h4>
+Shiny
+</h4>
+</center>
 <p><img data-src="assets/img/car_open_hood.jpg"></p>
-<p><img data-src="assets/img/Rlogo.svg" class="absolute" style="top: 150px; left: 95px; width: 13%; "></p>
-<p><img data-src="assets/img/shiny.png" class="absolute" style="top: 150px; left: 255px; width: 10%; "></p>
-</div><div class="column fragment" style="width:50%;">
-<h3 id="web-assembly">Web-Assembly</h3>
+<p><img data-src="assets/img/Rlogo.svg" class="absolute" style="top: 125px; left: 80px; width: 6%; "></p>
+<p><img data-src="assets/img/shiny.png" class="absolute" style="top: 125px; left: 180px; width: 5%; "></p>
+</div><div class="column fragment" style="width:33%;">
+<center>
+<h4>
+Web-Assembly
+</h4>
+</center>
 <p><img data-src="assets/img/car_open_hood.jpg"></p>
-<p><img data-src="assets/img/homepage.svg" class="absolute" style="top: 150px; left: 725px; width: 12%; "></p>
+<p><img data-src="assets/img/homepage.svg" class="absolute" style="top: 125px; left: 485px; width: 6%; "></p>
+</div><div class="column fragment" style="width:33%;">
+<center>
+<h4>
+Docker
+</h4>
+</center>
+<p><img data-src="assets/img/car_open_hood.jpg"></p>
+<p><img data-src="assets/img/tux.svg" class="absolute" style="top: 120px; left: 820px; width: 7%; "></p>
 </div></div>
+<aside class="notes">
+<p>TODO: Put Tux on third car hood</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="engine-swap" class="slide level2">
 <h2>Engine Swap</h2>
@@ -254,31 +476,57 @@ Eric Nantz
 <p><img data-src="assets/img/pit_stop.jpg"></p>
 </div><div class="column" style="width:50%;">
 <ul>
-<li class="fragment"><p>Verify packages compatibility with WebR</p>
+<li><p>Verify packages compatibility with WebR</p>
 <ul>
-<li class="fragment"><del><code>{golem}</code></del> <code>{rhino}</code></li>
+<li><del><code>{golem}</code></del> <code>{rhino}</code></li>
 </ul></li>
-<li class="fragment"><p>Augment <code>shinylive::export</code> to inject SAS data sets</p></li>
-<li class="fragment"><p><a href="https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R">User-friendly wrappers</a></p></li>
-<li class="fragment"><p>Test with custom Windows virtual machines</p></li>
+<li><p>Augment <code>shinylive::export</code> to inject SAS data sets</p></li>
+<li><p><a href="https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R">User-friendly wrappers</a></p></li>
+<li><p>Test with custom Windows virtual machines</p></li>
 </ul>
 </div></div>
+<div class="fragment">
+<div class="codewindow r absolute" style="font-size: 0.9em;top: 35%; left: 20%; ">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"utils.R"</span>)</span>
+<span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">build_app</span>()</span>
+<span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">run_app_webassembly</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 <div class="footer">
 <p><a href="https://github.com/RConsortium/submissions-pilot4-webR">github.com/RConsortium/submissions-pilot4-webR</a></p>
 </div>
 </section>
-<section id="with-great-power" class="slide level2">
-<h2>With Great Power…</h2>
-<p><img data-src="assets/img/app_filter.png" class="absolute" style="top: 60px; left: 10px; width: 25%; "></p>
-<div class="columns">
-<div class="column" style="width:30%;">
+<section class="slide level2">
 
-</div><div class="column" style="width:70%;">
-<ul>
-<li class="fragment">Dynamically updates p-values based on filtered observation</li>
-<li class="fragment">Potential for confusion and misinterpretation</li>
-<li class="fragment">Compromise: Allow filtering within visualization module only</li>
-</ul>
+<video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="assets/video/pilot4_webassembly_demo.mp4"></video>
+<div class="footer">
+<p><a href="https://submissions-pilot4-webr.netlify.app/">submissions-pilot4-webr.netlify.app</a></p>
+</div>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You!</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><i class="fa-solid fa-microphone fa-xl" aria-label="microphone"></i> <a href="https://r-podcast.org">R-Podcast</a></p>
+<p><i class="fa-solid fa-microphone fa-xl" aria-label="microphone"></i> <a href="https://serve.podhome.fm/r-weekly-highlights">R Weekly Highlights</a></p>
+<p><i class="fa-solid fa-display" aria-label="display"></i> <a href="https://shinydevseries.com">Shiny Developer Series</a></p>
+<p><i class="fa-brands fa-mastodon fa-xl" aria-label="mastodon"></i> <a href="https://podcastindex.org/@rpodcast">@rpodcast</a></p>
+<p><i class="fa-brands fa-linkedin fa-xl" aria-label="linkedin"></i> <a href="https://www.linkedin.com/in/eric-nantz-6621617/">eric-nantz</a></p>
+<p><i class="fa-brands fa-github fa-xl" aria-label="github"></i> <a href="https://github.com/rpodcast/">rpodcast</a></p>
+<div id="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#000000","colorLight":"#ffffff","height":128,"text":"https://rpodcast.github.io/opensub-ness2025/","width":128});
+  script.remove();
+})();
+</script>
+    
+</div><div class="column" style="width:50%;">
+<p><img data-src="assets/img/rpodcast-hexagon.png"></p>
 </div></div>
 
 
@@ -286,7 +534,7 @@ Eric Nantz
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="https://rpodcast.github.io/opensub-ness2025/">rpodcast.github.io/opensub-ness2025/</a></p>
+<p><a href="https://rpodcast.github.io/opensub-ness2025/">rpodcast.github.io/opensub-ness2025</a></p>
 </div>
 </div></div>
 
@@ -297,6 +545,7 @@ Eric Nantz
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-codewindow/codewindow.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -489,7 +738,7 @@ Eric Nantz
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealCodewindow, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -498,6 +747,44 @@ Eric Nantz
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -670,6 +957,8 @@ Eric Nantz
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
+    <script>videojs(video_shortcode_videojs_video2);</script>
     
 
 </body></html>
