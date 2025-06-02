@@ -6,3 +6,4 @@ _site
 
 # other
 scratch/
+.DS_Store
