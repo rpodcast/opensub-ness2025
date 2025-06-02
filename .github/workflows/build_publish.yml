@@ -1,10 +1,12 @@
 name: Render and Publish
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
       - 'index.qmd'
+      - '_quarto.yml'
 
 jobs:
   build-deploy:
