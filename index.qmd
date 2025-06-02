@@ -311,11 +311,37 @@ Time to comb through many static outputs. How many outputs are there total? Over
 
 ::::
 
-::: {.notes}
-TODO: Put Tux on third car hood
+## Docker Container: Start your Engines
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+![](assets/img/race_car_unsplash.jpg)
+
 :::
 
-## Engine Swap
+::: {.column width=50%}
+
+- Encapsulate Pilot 2 Application code
+
+- Build container using [`Dockerfile.txt`](https://github.com/RConsortium/submissions-pilot4-container/blob/main/Dockerfile.txt)
+
+- Run container in separate process 
+
+- Launch web browser
+
+:::
+
+::::
+
+::: footer
+[github.com/RConsortium/submissions-pilot4-container](https://github.com/RConsortium/submissions-pilot4-container)
+:::
+
+
+
+## WebAssembly: Small Tune-up
 
 :::: {.columns}
 
@@ -335,7 +361,7 @@ TODO: Put Tux on third car hood
 
 - [User-friendly wrappers](https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R)
 
-- Test with custom Windows virtual machines
+- Launch web browser
 
 :::
 
@@ -367,9 +393,88 @@ run_app_webassembly()
 [submissions-pilot4-webr.netlify.app](https://submissions-pilot4-webr.netlify.app/)
 :::
 
-## Conclusions
+## The Extra (Virtual) Mile {.centerheading background-image="assets/img/quickemu_with_windows.png" background-size="50%"}
 
-ADD MORE
+::: footer
+[github.com/quickemu-project/quickemu](https://github.com/quickemu-project/quickemu)
+:::
+
+## Racing to the Final Lap
+
+* June 2025: Transfer Pilot 4 submission packages to FDA
+    * Utilize `{pkglite}` to assemble submission bundle as text file
+    * Long term: Use `.zip` archive format
+* Up Next: [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/)  Dataset-JSON format
+
+## Future Pilots Under Consideration
+
++ Large-scale simulated clinical data
+* Reproducible submission environment using Nix
+* Generative AI to aid ADRG development
+
+::: footer
+[rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
+:::
+
+## Acknowledgements
+
+:::: {.columns}
+
+::: {.column width=33%}
+
+![](assets/img/rconsortium.svg)
+
+::: {style="font-size: 60%;"}
+
+* Sam Parmar (Pfizer)
+
+* Ben Straub (GSK)
+
+* Robert Devine (J&J)
+
+* Saghir Bashir (Argenx)
+
+* Ning Leng (Roche)
+
+:::
+
+:::
+
+::: {.column width=33%}
+
+![](assets/img/appsilon_logo.png)
+
+::: {style="font-size: 60%;"}
+
+* Pedro Silva (Jumping Rivers)
+
+* André Veríssimo
+
+* Vedha Viyash
+
+* Pawel Rzymkiewicz (OlympCode)
+
+:::
+
+:::
+
+::: {.column width=33%}
+
+![](assets/img/fda_logo.png){width="60%"}
+
+::: {style="font-size: 60%;"}
+
+* Paul Schuette
+
+* Hye Soo Cho
+
+* Youn Kyeong Chang
+
+:::
+
+:::
+
+::::
 
 ## Thank You!
 
