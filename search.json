@@ -77,6 +77,13 @@
     "text": "Engine Swap\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nTest with custom Windows virtual machines\n\n\n\n\n\nsource(\"utils.R\")\nbuild_app()\nrun_app_webassembly()\n\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
   },
   {
+    "objectID": "index.html#conclusions",
+    "href": "index.html#conclusions",
+    "title": "A Whole New (Open) World",
+    "section": "Conclusions",
+    "text": "Conclusions\nADD MORE"
+  },
+  {
     "objectID": "index.html#thank-you",
     "href": "index.html#thank-you",
     "title": "A Whole New (Open) World",
