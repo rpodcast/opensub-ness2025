@@ -9,7 +9,7 @@ revealjs-plugins:
   - codewindow
 ---
 
-## {background-image="assets/img/universe_unsplash.jpg" background-size="contain" background-opacity="0.4" background-color="black"}
+## {#titleslide data-menu-title="Title Slide" background-image="assets/img/universe_unsplash.jpg" background-size="contain" background-opacity="0.4" background-color="black"}
 
 <h2>A Whole New (Open) World</h2>
 <h3>Insights from R-based Submission Pilots</h3>
@@ -41,7 +41,7 @@ Eli Lilly & Company
 
 ::::
 
-## {background-image="assets/img/rpharma_audience.jpg" background-size="contain"}
+## {#rpharma data-menu-title="RPharma 2018" background-image="assets/img/rpharma_audience.jpg" background-size="contain"}
 
 ::: {.absolute left="1%" top="-5%" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
 R/Pharma 2018
@@ -52,30 +52,10 @@ R/Pharma 2018
 :::
 
 ::: {.notes}
-I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference. 
+I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference. Keynotes by Joe Cheng (Using Shiny Reponsibly in Pharma) and Paul Schuette (Using R in a Regulatory Environment). Also the genesis of key initiatives such as the R Validation Hub and the Pharmaverse
 :::
 
-## {background-image="assets/img/rpharma_joe_cheng.jpg" background-opacity="0.8" background-size="contain" visibility="hidden"}
-
-::: footer
-[Joe Cheng - Using Shiny Responsibly in Pharma](https://rinpharma.com/publication/rinpharma_33/)
-:::
-
-## {background-image="assets/img/rpharma_paul_schuette.jpg" background-size="contain" visibility="hidden"}
-
-::: footer
-[Paul Schuette - Using R in a Regulatory Environment](https://rinpharma.com/publication/rinpharma_7/)
-:::
-
-## {visibility="hidden"}
-
-![](assets/img/pharmaverse.png){.absolute top=10 left=70}
-
-::: footer
-[pharmaverse.org](https://pharmaverse.org){preview-link="true"}
-:::
-
-## R Consortium {.smaller}
+## R Consortium {#rconsortium data-menu-title="R Consortium" .smaller}
 
 :::: {.columns}
 
@@ -105,7 +85,7 @@ The R Consortium Provides:
 [r-consortium.org](https://r-consortium.org/)
 :::
 
-## R Submissions Working Group
+## R Submissions Working Group {#submissionswg data-menu-title="Submissions Working Group"}
 
 ![](assets/img/pilot1_kmplot.png){.absolute top=70 left=-50 width="40%"}
 
@@ -130,7 +110,7 @@ The R Consortium Provides:
 [rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
 :::
 
-## Foundation - Pilot 1 Submission {.smaller}
+## Foundation - Pilot 1 Submission {#pilot1 data-menu-title="Submissions Pilot 1" .smaller}
 
 :::: {.columns}
 
@@ -157,18 +137,7 @@ The R Consortium Provides:
 [github.com/RConsortium/submissions-pilot1-to-fda](https://github.com/RConsortium/submissions-pilot1-to-fda)
 :::
 
-## {background-image="assets/img/paperboy_bike.jpg" background-size="contain" visibility="hidden"}
-
-
-::: {.absolute left="1%" top="-5%" style="font-size:1.5em; padding: 0.1em 0.2em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
-The results are in!
-:::
-
-::: {.notes}
-A clinical trial just achieves their primary database lock. A multitude of analyses and visualizations are generated with the "real" data. Imagine you are reviewing these results. Sure, the primary analysis results meet the benchmark for statistical significance. But this is a complex disease state, requiring you to investigate how key efficacy, lab measures, and safety link together. 
-:::
-
-## {background-image="assets/img/wesley-tingey-snNHKZ-mGfE-unsplash.jpg" background-size="contain"}
+## {#clutter data-menu-title="Clutter" background-image="assets/img/wesley-tingey-snNHKZ-mGfE-unsplash.jpg" background-size="contain"}
 
 ::: {.absolute left="-5%" top="-5%" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
 Many Results
@@ -178,13 +147,13 @@ Many Results
 In the not-so-distant past, the results of a clinical trial were sent to reviewers as paper outputs that could fill a small moving truck
 :::
 
-## {background-image="assets/img/usb_computer_files.png" background-size="contain"}
+## {#digitalclutter data-menu-title="Digital Clutter" background-image="assets/img/usb_computer_files.png" background-size="contain"}
 
 ::: {.notes}
 Time to comb through many static outputs. How many outputs are there total? Over 1,000 tables, listings, and graphs.
 :::
 
----
+## {#pilot2-demo data-menu-title="Pilot 2 Demo Video"}
 
 {{<video "assets/video/pilot2_app_demo_for_dia_compressed.mp4" >}}
 
@@ -192,7 +161,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 [github.com/RConsortium/submissions-pilot2](https://github.com/RConsortium/submissions-pilot2)
 :::
 
-## With Great Power... 
+## With Great Power... {#filters data-menu-title="Pilot 2 Feedback - Filters"}
 
 ![](assets/img/app_filter.png){.absolute top=60 left=10 width="25%"}
 
@@ -212,7 +181,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 
 ::::
 
-## 
+## {#pilot2approve data-menu-title="Pilot 2 Approval"}
 
 ![](assets/img/pilot2_success_post_approval.png){.absolute top=10 left=70}
 
@@ -221,7 +190,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 :::
 
 
-## Install & Execute Application
+## Install & Execute Application {#pilot2-instructions data-menu-title="Pilot 2 Setup Instructions"}
 
 ![](assets/img/pilot2_packages.png){.absolute top=170 left=-40 width="35%"}
 
@@ -249,7 +218,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 
 ::::
 
-## Install & Execute Application 
+## Install & Execute Application {#pilot4-instructions data-menu-title="Pilot 4 Setup Instructions"}
 
 :::: {.columns}
 
@@ -284,7 +253,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 ![](assets/img/pilot2_packages.png){.absolute top=200 left=95 width="25%"}
 :::
 
----
+## {#engines data-menu-title="Pilot 4 App Engines"}
 
 :::: {.columns}
 
@@ -327,7 +296,7 @@ Time to comb through many static outputs. How many outputs are there total? Over
 
 ::::
 
-## Docker Container: Start your Engines
+## Docker Container: Start your Engines {#pilot4-docker data-menu-title="Pilot 4 Docker Procedure"}
 
 :::: {.columns}
 
@@ -351,13 +320,33 @@ Time to comb through many static outputs. How many outputs are there total? Over
 
 ::::
 
+::: {.fragment}
+
+::: {.codewindow .terminal .absolute top="10%" left="5%" style="font-size: 0.7em;"}
+```bash
+docker build \
+  --build-arg LOCAL_DATA_DIR=datasets \
+  --build-arg LOCAL_APP_DIR=pilot2wrappers \
+  -t RConsortium/submissions-pilot4-container:latest \
+  -f Dockerfile.txt .
+
+docker run \
+  -it \
+  --rm \
+  -p 8787:8787 \
+  RConsortium/submissions-pilot4-container:latest
+```
+:::
+
+:::
+
 ::: footer
 [github.com/RConsortium/submissions-pilot4-container](https://github.com/RConsortium/submissions-pilot4-container)
 :::
 
 
 
-## WebAssembly: Small Tune-up
+## WebAssembly: Small Tune-up {#pilot4-wasm data-menu-title="Pilot 4 WebAssembly Procedure"}
 
 :::: {.columns}
 
@@ -401,7 +390,7 @@ run_app_webassembly()
 [github.com/RConsortium/submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
 :::
 
----
+## {#pilot4demo data-menu-title="Pilot 4 WebAssembly Demo Video"}
 
 {{<video "assets/video/pilot4_webassembly_demo.mp4" aspect-ratio="16x9">}}
 
@@ -409,20 +398,22 @@ run_app_webassembly()
 [submissions-pilot4-webr.netlify.app](https://submissions-pilot4-webr.netlify.app/)
 :::
 
-## The Extra (Virtual) Mile {.centerheading background-image="assets/img/quickemu_with_windows.png" background-size="50%"}
+## The Extra (Virtual) Mile {#vm data-menu-title="Virtual Machine Testing" .centerheading background-image="assets/img/quickemu_with_windows.png" background-size="50%"}
 
 ::: footer
 [github.com/quickemu-project/quickemu](https://github.com/quickemu-project/quickemu)
 :::
 
-## Racing to the Final Lap
+## Racing to the Final Lap 🏁 {#pilot4status data-menu-title="Pilot 4 Status"}
 
-* June 2025: Transfer Pilot 4 submission packages to FDA
-    * Utilize `{pkglite}` to assemble submission bundle as text file
-    * Long term: Use `.zip` archive format
-* Up Next: [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/)  Dataset-JSON format
+**June 2025**: Transfer Pilot 4 submission packages to FDA
 
-## Future Pilots Under Consideration
+* [`{pkglite}`](https://merck.github.io/pkglite/) to assemble text file bundle
+* Long term: Use `.zip` archive format
+
+**Up Next**: [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/)  Dataset-JSON format
+
+## Future Pilots Under Consideration {#future data-menu-title="Future Work"}
 
 + Large-scale simulated clinical data
 * Reproducible submission environment using Nix
@@ -432,7 +423,7 @@ run_app_webassembly()
 [rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
 :::
 
-## Acknowledgements
+## Acknowledgements {#acknowledge}
 
 :::: {.columns}
 
@@ -492,7 +483,7 @@ run_app_webassembly()
 
 ::::
 
-## Thank You!
+## Thank You! {#lastslide data-menu-title="Thank you & Contact"}
 
 :::: {.columns}
 
