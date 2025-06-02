@@ -1,12 +1,17 @@
 ---
 title: "A Whole New (Open) World"
 subtitle: "Insights from R-based Submission Pilots"
+title-slide-attributes: 
+  data-background-image: assets/img/universe_unsplash.jpg
+  data-background-size: contain
+  data-background-opacity: "0.4"
+  data-background-color: black
 format: 
   revealjs:
     link-external-newwindow: true
     menu: true
     code-line-numbers: false
-    footer: "[rpodcast.github.io/opensub-ness2025/](https://rpodcast.github.io/opensub-ness2025/)"
+    footer: "[rpodcast.github.io/opensub-ness2025](https://rpodcast.github.io/opensub-ness2025/)"
 author: 
   - name: Eric Nantz
     affiliation:
@@ -16,12 +21,9 @@ author:
       - "{{< fa brands mastodon >}} [@rpodcast@podcastindex.social](https://podcastindex.social/@rpodcast)"
       - "{{< fa brands linkedin >}} [@eric-nantz](https://www.linkedin.com/in/eric-nantz-6621617/)"
 date: June 3, 2025
+revealjs-plugins:
+  - codewindow
 ---
-
-
-## More to Come
-
-## Even more to come
 
 ## {background-image="assets/img/rpharma_audience.jpg" background-size="contain"}
 
@@ -29,8 +31,62 @@ date: June 3, 2025
 R/Pharma 2018
 :::
 
+::: footer
+[rinpharma.com](https://rinpharma.com)
+:::
+
 ::: {.notes}
 I saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference. 
+:::
+
+## {background-image="assets/img/rpharma_joe_cheng.jpg" background-opacity="0.8" background-size="contain" visibility="hidden"}
+
+::: footer
+[Joe Cheng - Using Shiny Responsibly in Pharma](https://rinpharma.com/publication/rinpharma_33/)
+:::
+
+## {background-image="assets/img/rpharma_paul_schuette.jpg" background-size="contain" visibility="hidden"}
+
+::: footer
+[Paul Schuette - Using R in a Regulatory Environment](https://rinpharma.com/publication/rinpharma_7/)
+:::
+
+## {visibility="hidden"}
+
+![](assets/img/pharmaverse.png){.absolute top=10 left=70}
+
+::: footer
+[pharmaverse.org](https://pharmaverse.org){preview-link="true"}
+:::
+
+## R Consortium {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The R Consortium is a non-profit organization with the mission to support the:
+
+* R Language
+* R Foundation
+* R Community
+
+:::
+
+::: {.column width="50%"}
+
+The R Consortium Provides:
+
+* Grants to extend the technical and social infrastructure of the R Ecosystem
+* Oversight and governance for working groups that enable industry and government collaboration
+* An open forum for the R Community
+
+:::
+
+::::
+
+::: footer
+[r-consortium.org](https://r-consortium.org/)
 :::
 
 ## R Submissions Working Group
@@ -45,14 +101,10 @@ I saw firsthand the potential of such a collaboration with the advent of the R/P
 
 ::: {.column width="50%"}
 
-:::: {.incremental}
-
 * Industry **and Regulatory** members
 * Create submission deliverables with **open-source** software
 * Emulate realistic submission review
 * Innovation encouraged!
-
-::::
 
 :::
 
@@ -61,6 +113,97 @@ I saw firsthand the potential of such a collaboration with the advent of the R/P
 ::: footer
 [rconsortium.github.io/submissions-wg](https://rconsortium.github.io/submissions-wg/)
 :::
+
+## Foundation - Pilot 1 Submission {.smaller}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+![](assets/img/tron1.png)
+
+:::
+
+::: {.column width="70%"}
+
+* November 2021 - [Successful R-based Test Package Submitted to FDA](https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda)
+* Adhered to [Electronic Common Technical Document (eCTD)](https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/electronic-common-technical-document-ectd) specifications
+     + [Analysis Data Reviewer Guide](https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/datasets/adrg.pdf)
+     + R Package converted to [text file](https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m5/datasets/rconsortiumpilot1/analysis/adam/programs/r0pkg.txt) using [`{pkglite}`](https://merck.github.io/pkglite/)
+     + ADaM datasets
+     + TLF output
+     
+:::
+
+::::
+
+::: footer
+[github.com/RConsortium/submissions-pilot1-to-fda](https://github.com/RConsortium/submissions-pilot1-to-fda)
+:::
+
+## {background-image="assets/img/paperboy_bike.jpg" background-size="contain" visibility="hidden"}
+
+
+::: {.absolute left="1%" top="-5%" style="font-size:1.5em; padding: 0.1em 0.2em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
+The results are in!
+:::
+
+::: {.notes}
+A clinical trial just achieves their primary database lock. A multitude of analyses and visualizations are generated with the "real" data. Imagine you are reviewing these results. Sure, the primary analysis results meet the benchmark for statistical significance. But this is a complex disease state, requiring you to investigate how key efficacy, lab measures, and safety link together. 
+:::
+
+## {background-image="assets/img/wesley-tingey-snNHKZ-mGfE-unsplash.jpg" background-size="contain"}
+
+::: {.absolute left="-5%" top="-5%" style="font-size:1.8em; padding: 0.1em 0.5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
+Many Results
+:::
+
+::: {.notes}
+In the not-so-distant past, the results of a clinical trial were sent to reviewers as paper outputs that could fill a small moving truck
+:::
+
+## {background-image="assets/img/usb_computer_files.png" background-size="contain"}
+
+::: {.notes}
+Time to comb through many static outputs. How many outputs are there total? Over 1,000 tables, listings, and graphs.
+:::
+
+---
+
+{{<video "assets/video/pilot2_app_demo_for_dia_compressed.mp4" >}}
+
+::: footer
+[github.com/RConsortium/submissions-pilot2](https://github.com/RConsortium/submissions-pilot2)
+:::
+
+## With Great Power... 
+
+![](assets/img/app_filter.png){.absolute top=60 left=10 width="25%"}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+:::
+
+::: {.column width="70%"}
+
++ Dynamically updates p-values based on filtered observation
++ Potential for confusion and misinterpretation 
++ Compromise: Allow filtering within visualization module only
+
+:::
+
+::::
+
+## 
+
+![](assets/img/pilot2_success_post_approval.png){.absolute top=10 left=70}
+
+::: footer
+[R-Consortium Blog Post](https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2){preview-link="true"}
+:::
+
 
 ## Install & Execute Application
 
@@ -94,54 +237,83 @@ I saw firsthand the potential of such a collaboration with the advent of the R/P
 
 :::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="55%"}
 
-![](assets/img/spider_web.svg){.absolute top=100 left=-40 width="50%"}
+![](assets/img/spider_web.svg){.absolute top=100 left=-40 width="25%"}
 
-![](assets/img/pilot2_packages.png){.absolute top=200 left=95 width="25%"}
+![](assets/img/pilot2_packages.png){.absolute top=150 left=27 width="12%"}
+
+![](assets/img/docker-whale-only.png){.absolute top=230 left=270 width="20%"}
+
+![](assets/img/pilot2_packages.png){.absolute top=150 left=267 width="12%"}
+
+
+
 
 :::
 
-::: {.column width="55%"}
-
-:::: {.incremental}
+::: {.column width="45%"}
 
 - Extract submission bundle
 - Launch App in web process
 - View App in web browser
 
-::::
-
 :::
 
 ::::
+
+::: {.notes}
+![](assets/img/spider_web.svg){.absolute top=100 left=-40 width="50%"}
+
+![](assets/img/pilot2_packages.png){.absolute top=200 left=95 width="25%"}
+:::
 
 ---
 
 :::: {.columns}
 
-::: {.column width=50% .fragment}
+::: {.column width=33% .fragment}
 
-### Traditional Shiny
+<center>
+<h4>Shiny</h4>
+</center>
 
 ![](assets/img/car_open_hood.jpg)
 
-![](assets/img/Rlogo.svg){.absolute top=150 left=95 width="13%"}
+![](assets/img/Rlogo.svg){.absolute top=125 left=80 width="6%"}
 
-![](assets/img/shiny.png){.absolute top=150 left=255 width="10%"}
+![](assets/img/shiny.png){.absolute top=125 left=180 width="5%"}
 :::
 
-::: {.column width=50% .fragment}
+::: {.column width=33% .fragment}
 
-### Web-Assembly
+<center>
+<h4>Web-Assembly</h4>
+</center>
 
 ![](assets/img/car_open_hood.jpg)
 
-![](assets/img/homepage.svg){.absolute top=150 left=725 width="12%"}
+![](assets/img/homepage.svg){.absolute top=125 left=485 width="6%"}
+
+:::
+
+::: {.column width=33%  .fragment}
+
+<center>
+<h4>Docker</h4>
+</center>
+
+![](assets/img/car_open_hood.jpg)
+
+![](assets/img/tux.svg){.absolute top=120 left=820 width="7%"}
 
 :::
 
 ::::
+
+::: {.notes}
+TODO: Put Tux on third car hood
+:::
 
 ## Engine Swap
 
@@ -155,8 +327,6 @@ I saw firsthand the potential of such a collaboration with the advent of the R/P
 
 ::: {.column width=50%}
 
-:::: {.incremental}
-
 - Verify packages compatibility with WebR
 
      - ~~`{golem}`~~ `{rhino}`
@@ -166,35 +336,61 @@ I saw firsthand the potential of such a collaboration with the advent of the R/P
 - [User-friendly wrappers](https://github.com/RConsortium/submissions-pilot4-webR/blob/main/utils.R)
 
 - Test with custom Windows virtual machines
-::::
 
 :::
 
 ::::
+
+::: {.fragment}
+
+::: {.codewindow .r .absolute top="35%" left="20%" style="font-size: 0.9em;"}
+```{r}
+#| eval: false
+#| echo: true
+source("utils.R")
+build_app()
+run_app_webassembly()
+```
+:::
+
+:::
 
 ::: footer
 [github.com/RConsortium/submissions-pilot4-webR](https://github.com/RConsortium/submissions-pilot4-webR)
 :::
 
-## With Great Power... 
+---
 
-![](assets/img/app_filter.png){.absolute top=60 left=10 width="25%"}
+{{<video "assets/video/pilot4_webassembly_demo.mp4" aspect-ratio="16x9">}}
+
+::: footer
+[submissions-pilot4-webr.netlify.app](https://submissions-pilot4-webr.netlify.app/)
+:::
+
+## Thank You!
 
 :::: {.columns}
 
-::: {.column width="30%"}
+::: {.column width=50%}
 
+{{< fa solid microphone size=xl >}} [R-Podcast](https://r-podcast.org)
+
+{{< fa solid microphone size=xl >}} [R Weekly Highlights](https://serve.podhome.fm/r-weekly-highlights)
+
+{{< fa solid display >}} [Shiny Developer Series](https://shinydevseries.com)
+
+{{< fa brands mastodon size=xl >}} [\@rpodcast](https://podcastindex.org/@rpodcast)
+
+{{< fa brands linkedin size=xl >}} [eric-nantz](https://www.linkedin.com/in/eric-nantz-6621617/)
+
+{{< fa brands github size=xl >}} [rpodcast](https://github.com/rpodcast/)
+
+{{< qrcode https://rpodcast.github.io/opensub-ness2025/ >}}
 :::
 
-::: {.column width="70%"}
+::: {.column width=50%}
 
-:::: {.incremental}
-
-+ Dynamically updates p-values based on filtered observation
-+ Potential for confusion and misinterpretation 
-+ Compromise: Allow filtering within visualization module only
-
-::::
+![](assets/img/rpodcast-hexagon.png)
 
 :::
 
