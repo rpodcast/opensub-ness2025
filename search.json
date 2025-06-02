@@ -2,147 +2,147 @@
   {
     "objectID": "index.html#titleslide",
     "href": "index.html#titleslide",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "A Whole New (Open) World\n\n\nInsights from R-based Submission Pilots\n\n \n\n\nEric Nantz\nStatistician / Developer / Podcaster\nEli Lilly & Company\n @rpodcast.bsky.social\n @rpodcast@podcastindex.social\n @eric-nantz"
   },
   {
     "objectID": "index.html#rpharma",
     "href": "index.html#rpharma",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "R/Pharma 2018\n\n\nrinpharma.com\n\n\nI saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference. Keynotes by Joe Cheng (Using Shiny Reponsibly in Pharma) and Paul Schuette (Using R in a Regulatory Environment). Also the genesis of key initiatives such as the R Validation Hub and the Pharmaverse"
   },
   {
     "objectID": "index.html#rconsortium",
     "href": "index.html#rconsortium",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "R Consortium",
     "text": "R Consortium\n\n\nThe R Consortium is a non-profit organization with the mission to support the:\n\nR Language\nR Foundation\nR Community\n\n\nThe R Consortium Provides:\n\nGrants to extend the technical and social infrastructure of the R Ecosystem\nOversight and governance for working groups that enable industry and government collaboration\nAn open forum for the R Community\n\n\n\nr-consortium.org"
   },
   {
     "objectID": "index.html#submissionswg",
     "href": "index.html#submissionswg",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "R Submissions Working Group",
     "text": "R Submissions Working Group\n\n\n\n\n\n\nIndustry and Regulatory members\nCreate submission deliverables with open-source software\nEmulate realistic submission review\nInnovation encouraged!\n\n\n\nrconsortium.github.io/submissions-wg"
   },
   {
     "objectID": "index.html#pilot1",
     "href": "index.html#pilot1",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Foundation - Pilot 1 Submission",
     "text": "Foundation - Pilot 1 Submission\n\n\n\n\n\nNovember 2021 - Successful R-based Test Package Submitted to FDA\nAdhered to Electronic Common Technical Document (eCTD) specifications\n\nAnalysis Data Reviewer Guide\nR Package converted to text file using {pkglite}\nADaM datasets\nTLF output\n\n\n\n\ngithub.com/RConsortium/submissions-pilot1-to-fda"
   },
   {
     "objectID": "index.html#clutter",
     "href": "index.html#clutter",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "Many Results\n\n\nIn the not-so-distant past, the results of a clinical trial were sent to reviewers as paper outputs that could fill a small moving truck"
   },
   {
     "objectID": "index.html#digitalclutter",
     "href": "index.html#digitalclutter",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "Time to comb through many static outputs. How many outputs are there total? Over 1,000 tables, listings, and graphs."
   },
   {
     "objectID": "index.html#pilot2-demo",
     "href": "index.html#pilot2-demo",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "github.com/RConsortium/submissions-pilot2"
   },
   {
     "objectID": "index.html#filters",
     "href": "index.html#filters",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "With Great Power…",
     "text": "With Great Power…\n\n\n\n\n\n\nDynamically updates p-values based on filtered observation\nPotential for confusion and misinterpretation\nCompromise: Allow filtering within visualization module only"
   },
   {
     "objectID": "index.html#pilot2approve",
     "href": "index.html#pilot2approve",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "R-Consortium Blog Post"
   },
   {
     "objectID": "index.html#pilot2-instructions",
     "href": "index.html#pilot2-instructions",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Install & Execute Application",
     "text": "Install & Execute Application\n\n\n\n\n\n\nExtract submission bundle\nInstall R\n(Optionally install RStudio)\nInstall Rtools for package compilation\nInstall {renv} R package\nInstall application package library\nRun application in R process"
   },
   {
     "objectID": "index.html#pilot4-instructions",
     "href": "index.html#pilot4-instructions",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Install & Execute Application",
     "text": "Install & Execute Application\n\n\n\n\n\n\n\n\nExtract submission bundle\nLaunch App in web process\nView App in web browser"
   },
   {
     "objectID": "index.html#engines",
     "href": "index.html#engines",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "Shiny\n\n\n\n\n\n\n\n\nWeb-Assembly\n\n\n\n\n\n\n\nDocker"
   },
   {
     "objectID": "index.html#pilot4-docker",
     "href": "index.html#pilot4-docker",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Docker Container: Start your Engines",
     "text": "Docker Container: Start your Engines\n\n\n\n\n\nEncapsulate Pilot 2 Application code\nBuild container using Dockerfile.txt\nRun container in separate process\nLaunch web browser\n\n\n\n\ndocker build \\\n  --build-arg LOCAL_DATA_DIR=datasets \\\n  --build-arg LOCAL_APP_DIR=pilot2wrappers \\\n  -t RConsortium/submissions-pilot4-container:latest \\\n  -f Dockerfile.txt .\n\ndocker run \\\n  -it \\\n  --rm \\\n  -p 8787:8787 \\\n  RConsortium/submissions-pilot4-container:latest\n\n\n\ngithub.com/RConsortium/submissions-pilot4-container"
   },
   {
     "objectID": "index.html#pilot4-wasm",
     "href": "index.html#pilot4-wasm",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "WebAssembly: Small Tune-up",
     "text": "WebAssembly: Small Tune-up\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nLaunch web browser\n\n\n\n\n\nsource(\"utils.R\")\nbuild_app()\nrun_app_webassembly()\n\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
   },
   {
     "objectID": "index.html#pilot4demo",
     "href": "index.html#pilot4demo",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "",
     "text": "submissions-pilot4-webr.netlify.app"
   },
   {
     "objectID": "index.html#vm",
     "href": "index.html#vm",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "The Extra (Virtual) Mile",
     "text": "The Extra (Virtual) Mile\n\ngithub.com/quickemu-project/quickemu"
   },
   {
     "objectID": "index.html#pilot4status",
     "href": "index.html#pilot4status",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Racing to the Final Lap 🏁",
     "text": "Racing to the Final Lap 🏁\nJune 2025: Transfer Pilot 4 submission packages to FDA\n\n{pkglite} to assemble text file bundle\nLong term: Use .zip archive format\n\nUp Next: Pilot 5 Dataset-JSON format"
   },
   {
     "objectID": "index.html#future",
     "href": "index.html#future",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Future Pilots Under Consideration",
     "text": "Future Pilots Under Consideration\n\nLarge-scale simulated clinical data\nReproducible submission environment using Nix\nGenerative AI to aid ADRG development\n\n\nrconsortium.github.io/submissions-wg"
   },
   {
     "objectID": "index.html#acknowledge",
     "href": "index.html#acknowledge",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Acknowledgements",
     "text": "Acknowledgements\n\n\n\n\n\nSam Parmar (Pfizer)\nBen Straub (GSK)\nRobert Devine (J&J)\nSaghir Bashir (Argenx)\nNing Leng (Roche)\n\n\n\n\n\n\nPedro Silva (Jumping Rivers)\nAndré Veríssimo\nVedha Viyash\nPawel Rzymkiewicz (OlympCode)\n\n\n\n\n\n\nPaul Schuette\nHye Soo Cho\nYoun Kyeong Chang"
   },
   {
     "objectID": "index.html#lastslide",
     "href": "index.html#lastslide",
-    "title": "",
+    "title": "R-Based Submissions (NESS 2025)",
     "section": "Thank You!",
     "text": "Thank You!\n\n\n R-Podcast\n R Weekly Highlights\n Shiny Developer Series\n @rpodcast\n eric-nantz\n rpodcast"
   }
