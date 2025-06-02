@@ -15,3 +15,4 @@ Within the life sciences industry, the R language has enabled tremendous innovat
 
 * Title slide image by [Greg Rakozy](https://unsplash.com/@grakozy) on [Unspash](https://unsplash.com/photos/silhouette-photography-of-person-oMpAz-DN-9I)
 
+* Photo by <a href="https://unsplash.com/@maxa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxime Agnelli</a> on <a href="https://unsplash.com/photos/blue-and-white-f-1-car-on-road-arbAbFBQ2rw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
