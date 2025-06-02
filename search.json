@@ -70,18 +70,46 @@
     "text": "Install & Execute Application\n\n\n\n\n\n\n\n\nExtract submission bundle\nLaunch App in web process\nView App in web browser"
   },
   {
-    "objectID": "index.html#engine-swap",
-    "href": "index.html#engine-swap",
+    "objectID": "index.html#docker-container-start-your-engines",
+    "href": "index.html#docker-container-start-your-engines",
     "title": "A Whole New (Open) World",
-    "section": "Engine Swap",
-    "text": "Engine Swap\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nTest with custom Windows virtual machines\n\n\n\n\n\nsource(\"utils.R\")\nbuild_app()\nrun_app_webassembly()\n\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
+    "section": "Docker Container: Start your Engines",
+    "text": "Docker Container: Start your Engines\n\n\n\n\n\nEncapsulate Pilot 2 Application code\nBuild container using Dockerfile.txt\nRun container in separate process\nLaunch web browser\n\n\n\ngithub.com/RConsortium/submissions-pilot4-container"
   },
   {
-    "objectID": "index.html#conclusions",
-    "href": "index.html#conclusions",
+    "objectID": "index.html#webassembly-small-tune-up",
+    "href": "index.html#webassembly-small-tune-up",
     "title": "A Whole New (Open) World",
-    "section": "Conclusions",
-    "text": "Conclusions\nADD MORE"
+    "section": "WebAssembly: Small Tune-up",
+    "text": "WebAssembly: Small Tune-up\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nLaunch web browser\n\n\n\n\n\nsource(\"utils.R\")\nbuild_app()\nrun_app_webassembly()\n\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
+  },
+  {
+    "objectID": "index.html#the-extra-virtual-mile",
+    "href": "index.html#the-extra-virtual-mile",
+    "title": "A Whole New (Open) World",
+    "section": "The Extra (Virtual) Mile",
+    "text": "The Extra (Virtual) Mile\n\ngithub.com/quickemu-project/quickemu"
+  },
+  {
+    "objectID": "index.html#racing-to-the-final-lap",
+    "href": "index.html#racing-to-the-final-lap",
+    "title": "A Whole New (Open) World",
+    "section": "Racing to the Final Lap",
+    "text": "Racing to the Final Lap\n\nJune 2025: Transfer Pilot 4 submission packages to FDA\n\nUtilize {pkglite} to assemble submission bundle as text file\nLong term: Use .zip archive format\n\nUp Next: Pilot 5 Dataset-JSON format"
+  },
+  {
+    "objectID": "index.html#future-pilots-under-consideration",
+    "href": "index.html#future-pilots-under-consideration",
+    "title": "A Whole New (Open) World",
+    "section": "Future Pilots Under Consideration",
+    "text": "Future Pilots Under Consideration\n\nLarge-scale simulated clinical data\nReproducible submission environment using Nix\nGenerative AI to aid ADRG development\n\n\nrconsortium.github.io/submissions-wg"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "A Whole New (Open) World",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\n\n\n\n\nSam Parmar (Pfizer)\nBen Straub (GSK)\nRobert Devine (J&J)\nSaghir Bashir (Argenx)\nNing Leng (Roche)\n\n\n\n\n\n\nPedro Silva (Jumping Rivers)\nAndré Veríssimo\nVedha Viyash\nPawel Rzymkiewicz (OlympCode)\n\n\n\n\n\n\nPaul Schuette\nHye Soo Cho\nYoun Kyeong Chang"
   },
   {
     "objectID": "index.html#thank-you",
