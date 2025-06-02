@@ -11,3 +11,7 @@ Within the life sciences industry, the R language has enabled tremendous innovat
 * Pilot 4 container repo https://github.com/RConsortium/submissions-pilot4-container
 * Pilot 4 webassembly repo https://github.com/RConsortium/submissions-pilot4-webR
 
+## Image credits
+
+* Title slide image by [Greg Rakozy](https://unsplash.com/@grakozy) on [Unspash](https://unsplash.com/photos/silhouette-photography-of-person-oMpAz-DN-9I)
+
