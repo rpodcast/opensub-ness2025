@@ -2,119 +2,126 @@
   {
     "objectID": "index.html#section",
     "href": "index.html#section",
-    "title": "A Whole New (Open) World",
+    "title": "",
+    "section": "",
+    "text": "A Whole New (Open) World\n\n\nInsights from R-based Submission Pilots\n\n \n\n\nEric Nantz\nStatistician / Developer / Podcaster\nEli Lilly & Company\n @rpodcast.bsky.social\n @rpodcast@podcastindex.social\n @eric-nantz"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "",
     "section": "",
     "text": "R/Pharma 2018\n\n\nrinpharma.com\n\n\nI saw firsthand the potential of such a collaboration with the advent of the R/Pharma conference."
   },
   {
     "objectID": "index.html#r-consortium",
     "href": "index.html#r-consortium",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "R Consortium",
     "text": "R Consortium\n\n\nThe R Consortium is a non-profit organization with the mission to support the:\n\nR Language\nR Foundation\nR Community\n\n\nThe R Consortium Provides:\n\nGrants to extend the technical and social infrastructure of the R Ecosystem\nOversight and governance for working groups that enable industry and government collaboration\nAn open forum for the R Community\n\n\n\nr-consortium.org"
   },
   {
     "objectID": "index.html#r-submissions-working-group",
     "href": "index.html#r-submissions-working-group",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "R Submissions Working Group",
     "text": "R Submissions Working Group\n\n\n\n\n\n\nIndustry and Regulatory members\nCreate submission deliverables with open-source software\nEmulate realistic submission review\nInnovation encouraged!\n\n\n\nrconsortium.github.io/submissions-wg"
   },
   {
     "objectID": "index.html#foundation---pilot-1-submission",
     "href": "index.html#foundation---pilot-1-submission",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Foundation - Pilot 1 Submission",
     "text": "Foundation - Pilot 1 Submission\n\n\n\n\n\nNovember 2021 - Successful R-based Test Package Submitted to FDA\nAdhered to Electronic Common Technical Document (eCTD) specifications\n\nAnalysis Data Reviewer Guide\nR Package converted to text file using {pkglite}\nADaM datasets\nTLF output\n\n\n\n\ngithub.com/RConsortium/submissions-pilot1-to-fda"
   },
   {
-    "objectID": "index.html#section-5",
-    "href": "index.html#section-5",
-    "title": "A Whole New (Open) World",
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "",
     "section": "",
     "text": "Many Results\n\n\nIn the not-so-distant past, the results of a clinical trial were sent to reviewers as paper outputs that could fill a small moving truck"
   },
   {
-    "objectID": "index.html#section-6",
-    "href": "index.html#section-6",
-    "title": "A Whole New (Open) World",
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "",
     "section": "",
     "text": "Time to comb through many static outputs. How many outputs are there total? Over 1,000 tables, listings, and graphs."
   },
   {
     "objectID": "index.html#with-great-power",
     "href": "index.html#with-great-power",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "With Great Power…",
     "text": "With Great Power…\n\n\n\n\n\n\nDynamically updates p-values based on filtered observation\nPotential for confusion and misinterpretation\nCompromise: Allow filtering within visualization module only"
   },
   {
-    "objectID": "index.html#section-7",
-    "href": "index.html#section-7",
-    "title": "A Whole New (Open) World",
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "",
     "section": "",
     "text": "R-Consortium Blog Post"
   },
   {
     "objectID": "index.html#install-execute-application",
     "href": "index.html#install-execute-application",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Install & Execute Application",
     "text": "Install & Execute Application\n\n\n\n\n\n\nExtract submission bundle\nInstall R\n(Optionally install RStudio)\nInstall Rtools for package compilation\nInstall {renv} R package\nInstall application package library\nRun application in R process"
   },
   {
     "objectID": "index.html#install-execute-application-1",
     "href": "index.html#install-execute-application-1",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Install & Execute Application",
     "text": "Install & Execute Application\n\n\n\n\n\n\n\n\nExtract submission bundle\nLaunch App in web process\nView App in web browser"
   },
   {
     "objectID": "index.html#docker-container-start-your-engines",
     "href": "index.html#docker-container-start-your-engines",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Docker Container: Start your Engines",
     "text": "Docker Container: Start your Engines\n\n\n\n\n\nEncapsulate Pilot 2 Application code\nBuild container using Dockerfile.txt\nRun container in separate process\nLaunch web browser\n\n\n\ngithub.com/RConsortium/submissions-pilot4-container"
   },
   {
     "objectID": "index.html#webassembly-small-tune-up",
     "href": "index.html#webassembly-small-tune-up",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "WebAssembly: Small Tune-up",
     "text": "WebAssembly: Small Tune-up\n\n\n\n\n\nVerify packages compatibility with WebR\n\n{golem} {rhino}\n\nAugment shinylive::export to inject SAS data sets\nUser-friendly wrappers\nLaunch web browser\n\n\n\n\n\nsource(\"utils.R\")\nbuild_app()\nrun_app_webassembly()\n\n\n\n\ngithub.com/RConsortium/submissions-pilot4-webR"
   },
   {
     "objectID": "index.html#the-extra-virtual-mile",
     "href": "index.html#the-extra-virtual-mile",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "The Extra (Virtual) Mile",
     "text": "The Extra (Virtual) Mile\n\ngithub.com/quickemu-project/quickemu"
   },
   {
     "objectID": "index.html#racing-to-the-final-lap",
     "href": "index.html#racing-to-the-final-lap",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Racing to the Final Lap",
     "text": "Racing to the Final Lap\n\nJune 2025: Transfer Pilot 4 submission packages to FDA\n\nUtilize {pkglite} to assemble submission bundle as text file\nLong term: Use .zip archive format\n\nUp Next: Pilot 5 Dataset-JSON format"
   },
   {
     "objectID": "index.html#future-pilots-under-consideration",
     "href": "index.html#future-pilots-under-consideration",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Future Pilots Under Consideration",
     "text": "Future Pilots Under Consideration\n\nLarge-scale simulated clinical data\nReproducible submission environment using Nix\nGenerative AI to aid ADRG development\n\n\nrconsortium.github.io/submissions-wg"
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Acknowledgements",
     "text": "Acknowledgements\n\n\n\n\n\nSam Parmar (Pfizer)\nBen Straub (GSK)\nRobert Devine (J&J)\nSaghir Bashir (Argenx)\nNing Leng (Roche)\n\n\n\n\n\n\nPedro Silva (Jumping Rivers)\nAndré Veríssimo\nVedha Viyash\nPawel Rzymkiewicz (OlympCode)\n\n\n\n\n\n\nPaul Schuette\nHye Soo Cho\nYoun Kyeong Chang"
   },
   {
     "objectID": "index.html#thank-you",
     "href": "index.html#thank-you",
-    "title": "A Whole New (Open) World",
+    "title": "",
     "section": "Thank You!",
     "text": "Thank You!\n\n\n R-Podcast\n R Weekly Highlights\n Shiny Developer Series\n @rpodcast\n eric-nantz\n rpodcast"
   }
